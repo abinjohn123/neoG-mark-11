@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Lucky Birthday</title>
   </head>
   <body>
-    <div class="app">
+    <div class="app flex-col">
       <div class="header">
         <h1>Is Your Birthday Lucky?</h1>
         <p>Enter your birthday and a lucky number to check if you're lucky</p>
       </div>
-      <form class="form">
-        <div class="form-row">
+      <form class="form flex-col">
+        <div class="form-row flex-col">
           <label for="date">Enter Birthdate</label>
-          <input type="date" required="true" />
+          <input name="date" type="date" required="true" id="date" />
         </div>
-        <div class="form-row">
+        <div class="form-row flex-col">
           <label for="lucky-number">Enter Your Lucky Number</label>
-          <input type="number" required="true" />
+          <input
+            name="lucky-number"
+            type="number"
+            required="true"
+            id="lucky-number"
+          />
         </div>
-        <button type="submit">Check!</button>
+        <button class="btn" type="submit">Check!</button>
       </form>
-      <div class="output">
-        <p></p>
-      </div>
+      <div class="output"><p></p></div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
