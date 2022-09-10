@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Luckiest+Guy&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +15,7 @@
 
 html {
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -51,6 +53,14 @@ body {
 .header {
   text-align: center;
 }
+.header h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.header p {
+  font-weight: 700;
+}
 
 .form {
   gap: 2rem;
@@ -85,7 +95,7 @@ input.error {
   display: inline-block;
   font-weight: 700;
   text-align: center;
-  color: var(--primary-dark);
+  color: var(--text);
 }
 
 .btn {
