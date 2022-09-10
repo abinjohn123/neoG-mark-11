@@ -6,5 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucky Birthday</title>
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <div class="header">
+        <h1>Is Your Birthday Lucky?</h1>
+        <p>Enter your birthday and a lucky number to check if you're lucky</p>
+      </div>
+      <form class="form">
+        <div class="form-row">
+          <label for="date">Enter Birthdate</label>
+          <input type="date" required="true" />
+        </div>
+        <div class="form-row">
+          <label for="lucky-number">Enter Your Lucky Number</label>
+          <input type="number" required="true" />
+        </div>
+        <button type="submit">Check!</button>
+      </form>
+      <div class="output">
+        <p></p>
+      </div>
+    </div>
+  </body>
 </html>
