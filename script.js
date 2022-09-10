@@ -24,7 +24,9 @@ function formSubmitHandler(e) {
   const dateSum = dateArray.reduce((sum, el) => sum + Number.parseInt(el), 0);
 
   outputEl.innerText =
-    dateSum % numValue === 0 ? 'yes, lucky!' : 'no, not lucky!';
+    dateSum % numValue === 0
+      ? 'Yes, you are lucky! 🥳'
+      : 'No, you are not lucky! 😶';
 }
 
 // Event Listeners
