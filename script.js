@@ -6,8 +6,12 @@ const outputEl = document.querySelector('.output > p');
 
 function areInputsValid(dateValue, numValue) {
   if (dateValue === '') return false;
-  if (numValue < 0) return false;
+  if (numValue <= 0) {
+    numInput.classList.add('error');
+    return false;
+  }
 
+  numInput.classList.remove('error');
   return true;
 }
 
